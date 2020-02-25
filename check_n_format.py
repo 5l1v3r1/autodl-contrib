@@ -10,15 +10,15 @@ import tensorflow as tf
 path.append('utils')
 path.append('utils/image')
 path.append('utils/video')
-STARTING_KIT_DIR = '../autodl/codalab_competition_bundle/AutoDL_starting_kit'
-LOG_FILE = 'baseline_log.txt'
-path.append(STARTING_KIT_DIR)
-path.append(os.path.join(STARTING_KIT_DIR, 'AutoDL_ingestion_program'))
+# STARTING_KIT_DIR = '../autodl/codalab_competition_bundle/AutoDL_starting_kit'
+# LOG_FILE = 'baseline_log.txt'
+# path.append(STARTING_KIT_DIR)
+# path.append(os.path.join(STARTING_KIT_DIR, 'AutoDL_ingestion_program'))
 import dataset_manager
 import pandas as pd
 import format_image
 import format_video
-import run_local_test
+#import run_local_test
 import data_browser
 
 def read_metadata(input_dir):
@@ -106,11 +106,11 @@ def format_data(input_dir, output_dir, fake_name, effective_sample_num,
     print('format_data: done.')
 
 
-def run_baseline(data_dir, code_dir):
-    print('run_baseline: Running baseline...')
-    print('Saving results in {}.'.format(LOG_FILE))
-    run_local_test.run_baseline(data_dir, code_dir)
-    print('run_baseline: done.')
+# def run_baseline(data_dir, code_dir):
+#     print('run_baseline: Running baseline...')
+#     print('Saving results in {}.'.format(LOG_FILE))
+#     run_local_test.run_baseline(data_dir, code_dir)
+#     print('run_baseline: done.')
 
 
 def manual_check(data_dir, num_examples=5):
